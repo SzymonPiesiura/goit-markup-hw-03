@@ -10,14 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
-      <a class="logo" href="index.html">
-        <span class="logo-color">Web</span>Studio
-      </a>
+    <header class="navi-box">
+      <div class="logo-block">
+        <a class="logo" href="index.html">
+          <span class="logo-color">Web</span>Studio
+        </a>
+      </div>
       <nav>
         <ul class="navigation-list">
           <li><a class="navigation" href="#">Agencja</a></li>
@@ -35,8 +44,8 @@
         <h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="button-order">Zamów Usługe</button>
       </div>
-      <ul>
-        <li>
+      <ul class="container container-text">
+        <li class="text-content">
           <h3 class="title-marketing">Lorem Ipsum</h3>
           <p class="text-marketing">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id
@@ -44,7 +53,7 @@
             quibusdam ipsam.
           </p>
         </li>
-        <li>
+        <li class="text-content">
           <h3 class="title-marketing">Lorem Ipsum</h3>
           <p class="text-marketing">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -52,7 +61,7 @@
             ducimus expedita?
           </p>
         </li>
-        <li>
+        <li class="text-content">
           <h3 class="title-marketing">Lorem Ipsum</h3>
           <p class="text-marketing">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -60,7 +69,7 @@
             ducimus expedita?
           </p>
         </li>
-        <li>
+        <li class="text-content">
           <h3 class="title-marketing">Lorem Ipsum</h3>
           <p class="text-marketing">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -70,8 +79,8 @@
         </li>
       </ul>
       <h2 class="title-image">Czym się zajmujemy</h2>
-      <ul>
-        <li>
+      <ul class="container container-image">
+        <li class="image-box">
           <img
             src="images/programer_working.jpg"
             width="370"
@@ -79,7 +88,7 @@
             alt="pracujący programista przy biurku w biurze"
           />
         </li>
-        <li>
+        <li class="image-box">
           <img
             src="images/web_ui_designers.jpg"
             width="370"
@@ -87,7 +96,7 @@
             alt="projektant interfejsu internetowego opracowywujący interfejs aplikacji na telefony komórkowe"
           />
         </li>
-        <li>
+        <li class="image-box">
           <img
             src="images/creative_artist_web.jpg"
             width="370"
@@ -96,55 +105,59 @@
           />
         </li>
       </ul>
-      <h2 class="title-image">Nasz Zespół</h2>
-      <ul>
-        <li>
-          <img
-            src="images/team/product_designer.jpg"
-            width="270"
-            height="260"
-            alt="mężczyzna o brązowych włosach ciemnym zaroście w okularach ubrany w brązową koszulę"
-          />
-          <div class="name-worker">John Doe</div>
-          <div class="department-worker">Product Designer</div>
-        </li>
-        <li>
-          <img
-            src="images/team/frontend_developer.jpg"
-            width="270"
-            height="260"
-            alt="młoda kobieta o blond włosach jasnej karnacji i okularch ubrana w czarna marynarke oraz biała koszulę"
-          />
-          <div class="name-worker">John Doe</div>
-          <div class="department-worker">Frontend Developer</div>
-        </li>
-        <li>
-          <img
-            src="images/team/marketing.jpg"
-            width="270"
-            height="260"
-            alt="młody mężczyzna o jasno brązowych włosach z delikatnym zarostem ubrany w jasno niebieską koszulę"
-          />
-          <div class="name-worker">John Doe</div>
-          <div class="department-worker">Marketing</div>
-        </li>
-        <li>
-          <img
-            src="images/team/ui_designer.jpg"
-            width="270"
-            height="260"
-            alt="mężczyzna w srednim wieku o czarnych włosach z zarostem na twarzy ubrany w czarną koszulkę z krótkim rękawem"
-          />
-          <div class="name-worker">John Doe</div>
-          <div class="department-worker">UI Designer</div>
-        </li>
-      </ul>
+      <div class="team-box">
+        <h2 class="title-image">Nasz Zespół</h2>
+        <ul class="image-team">
+          <li class="image-box team-conteiner">
+            <img
+              src="images/team/product_designer.jpg"
+              width="270"
+              height="260"
+              alt="mężczyzna o brązowych włosach ciemnym zaroście w okularach ubrany w brązową koszulę"
+            />
+            <div class="name-worker">John Doe</div>
+            <div class="department-worker">Product Designer</div>
+          </li>
+          <li class="image-box team-conteiner">
+            <img
+              src="images/team/frontend_developer.jpg"
+              width="270"
+              height="260"
+              alt="młoda kobieta o blond włosach jasnej karnacji i okularch ubrana w czarna marynarke oraz biała koszulę"
+            />
+            <div class="name-worker">John Doe</div>
+            <div class="department-worker">Frontend Developer</div>
+          </li>
+          <li class="image-box team-conteiner">
+            <img
+              src="images/team/marketing.jpg"
+              width="270"
+              height="260"
+              alt="młody mężczyzna o jasno brązowych włosach z delikatnym zarostem ubrany w jasno niebieską koszulę"
+            />
+            <div class="name-worker">John Doe</div>
+            <div class="department-worker">Marketing</div>
+          </li>
+          <li class="image-box team-conteiner">
+            <img
+              src="images/team/ui_designer.jpg"
+              width="270"
+              height="260"
+              alt="mężczyzna w srednim wieku o czarnych włosach z zarostem na twarzy ubrany w czarną koszulkę z krótkim rękawem"
+            />
+            <div class="name-worker">John Doe</div>
+            <div class="department-worker">UI Designer</div>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer class="footer-box">
       <address>
-        <a class="logo-footer" href="index.html">
-          <span class="logo-color">Web</span>Studio
-        </a>
+        <div class="logo-block-footer">
+          <a class="logo-footer" href="index.html">
+            <span class="logo-color">Web</span>Studio
+          </a>
+        </div>
         <div class="address">m. Warszawa, Aleje Jerozolimskie 21</div>
         <a class="link-contact-footer" href="mailto:info@example.com"
           >info@example.com
